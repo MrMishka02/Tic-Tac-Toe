@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: antiquewhite;
+    overflow: hidden;
+}
+
+.main{
+    width: 100vw;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+h1{
+    position: relative;
+    top: -2%;
+}
+
+.cards{
+    width: 65%;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.ticTac{
+    width: 30%;
+    height: 34%;
+    border: 5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.ticTac:hover{
+    cursor: pointer;
+    background-color: lightgrey;
+}
+
+.popWinner{
+    position: absolute;
+    width: 35%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    border-radius: 10px;
+}
+
+.pWinner{
+    font-size: xx-large;
+    margin-bottom: 10%;
+}
+
+.btnNew{
+    width: 40%;
+    height: 20%;
+    border: none;
+    background-color: lightgray;
+    border-radius: 5px;
+    color: blue;
+    font-weight: bolder;
+}
+
+.btnNew:hover{
+    cursor: pointer;
+    background-color: gray;
+    user-select: none;
+}
+
+footer{
+    width: 100%;
+    height: 30px;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    bottom: 0;
+}
