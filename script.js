@@ -37,26 +37,26 @@ function checkWinner(){
             ticTac[0].innerText == ticTac[4].innerText && ticTac[4].innerText == ticTac[8].innerText ||
             ticTac[2].innerText == ticTac[4].innerText && ticTac[4].innerText == ticTac[6].innerText ||
             ticTac[3].innerText == ticTac[4].innerText && ticTac[4].innerText == ticTac[5].innerText){
-            popWinner.style.visibility = "visible";
-            if (count % 2 == 1){
-                pWinner.innerHTML = "გამარჯვებულია I მოთამაშე!";
-            }
-            else {
-                pWinner.innerHTML = "გამარჯვებულია II მოთამაშე!";
-            }
-            popWinner.showModal();
+                popWinner.style.visibility = "visible";
+                if (count % 2 == 1){
+                    pWinner.innerHTML = "გამარჯვებულია I მოთამაშე!";
+                }
+                else {
+                    pWinner.innerHTML = "გამარჯვებულია II მოთამაშე!";
+                }
+                popWinner.showModal();
         }
     }
     if (ticTac[0].innerText.length != 0){
         if (ticTac[0].innerText == ticTac[1].innerText && ticTac[1].innerText == ticTac[2].innerText ||
             ticTac[0].innerText == ticTac[3].innerText && ticTac[3].innerText == ticTac[6].innerText){
                 popWinner.style.visibility = "visible";
-            if (count % 2 == 1){
-                pWinner.innerHTML = "გამარჯვებულია I მოთამაშე!";
-            }
-            else {
-                pWinner.innerHTML = "გამარჯვებულია II მოთამაშე!";
-            }
+                if (count % 2 == 1){
+                    pWinner.innerHTML = "გამარჯვებულია I მოთამაშე!";
+                }
+                else {
+                    pWinner.innerHTML = "გამარჯვებულია II მოთამაშე!";
+                }
                 popWinner.showModal();
         }
     }
@@ -64,13 +64,13 @@ function checkWinner(){
         if (ticTac[2].innerText == ticTac[5].innerText && ticTac[5].innerText == ticTac[8].innerText ||
             ticTac[6].innerText == ticTac[7].innerText && ticTac[7].innerText == ticTac[8].innerText){
                 popWinner.style.visibility = "visible";
-            if (count % 2 == 1){
-                pWinner.innerHTML = "გამარჯვებულია I მოთამაშე!";
-            }
-            else {
-                pWinner.innerHTML = "გამარჯვებულია II მოთამაშე!";
-            }
-            popWinner.showModal();
+                if (count % 2 == 1){
+                    pWinner.innerHTML = "გამარჯვებულია I მოთამაშე!";
+                }
+                else {
+                    pWinner.innerHTML = "გამარჯვებულია II მოთამაშე!";
+                }
+                popWinner.showModal();
         }
     }
     if (count >= 9) {
